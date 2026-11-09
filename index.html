@@ -6,7 +6,7 @@
     <title>Título de mi Página</title>
     <style>
         body {
-            background-color: #d81b60; /* Fondo rosa (puedes usar #ff69b4 si prefieres un rosa más claro) */
+            background-color: #d81b60; /* Fondo rosa */
             color: #ffffff;            /* Texto en blanco */
             font-family: Arial, sans-serif;
             margin: 0;
@@ -14,7 +14,18 @@
         }
 
         h1, h2, p {
-            color: #ffffff;            /* Garantiza que los encabezados y párrafos sean blancos */
+            color: #ffffff;
+        }
+
+        .contenedor-video {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        iframe {
+            max-width: 100%;
+            border-radius: 8px;
+            border: none;
         }
     </style>
 </head>
@@ -23,6 +34,18 @@
     <h1>¡Hola, mundo!</h1>
     <h2>Paula Ruiz Gutiérrez</h2>
     <p>Este es el contenido visible de la página web.</p>
+
+    <!-- Video insertado abajo de todo -->
+    <div class="contenedor-video">
+        <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/vc6YP_xIST8" 
+            title="Reproductor de video de YouTube" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+        </iframe>
+    </div>
 
 </body>
 </html>
